@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Source sans pro, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  /*background: #1abc9c;*/
+  background-image: linear-gradient(to right, #2C0700 , #C53421);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.inlineBloc .pseudoPlayer {
+  float: left;
+  display: block;
+}
+
+
+/* Right-aligned link */
+.inlineBloc .fakeimg_player {
+  float: right;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: #2C0700;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: #FFED00;
+}
+
+.row h2 {
+  font-family: MONTREAL-HEAVY;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 1%; /* IE10 */
+  flex: 1%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg_player {
+  background-color: #2C0700;
+  border-radius: 10px;
+  border-color: white;
+  border: solid 2px;
+  color: white;
+  width: 100px;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #2C0700;
+  color: #FFFFFF;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.container {
+  position: relative;
+  float: left;
+  width: 100px;
+  margin: 15px;
+  margin-bottom: 30px;
+}
+
+.center {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  color: #2C0700;
+}
+
+.containerPseudo {
+  position: relative;
+  float: left;
+  width: 200px;
+}
+
+.detailsPlayers {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.centerPseudo {
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #C53421;
+}
+
+#imageGameMode { 
+  width: 100%;
+  height: auto;
+}
+
+#form-div {
+  text-align: center;
+  background-color: #FFED00;
+  border: solid #2C0700 7px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:15px;
+  padding-bottom:20px;
+  margin: 5px;
+  width: 100%;
+  height: 450px;
+  float: left;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  font-size: 0.9em;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.monTableau {
+  overflow: scroll;
+  height: 350px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+table thead {
+  inset-block-start: 0;
+  background-color: #2C0700;
+  color: white;
+}
+
+#entete {
+  position: sticky;
+}
+
+.topnav {
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #2C0700;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #2C0700;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
